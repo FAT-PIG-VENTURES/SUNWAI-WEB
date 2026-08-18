@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Outfit, Inter, JetBrains_Mono, Noto_Serif_Devanagari } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
@@ -41,6 +42,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${outfitFont.variable} ${interFont.variable} ${jetbrainsMono.variable} ${notoDevanagari.variable}`}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JMCT4J6F1B"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JMCT4J6F1B');
+          `}
+        </Script>
+      </head>
       <body>
         <CustomCursor />
         <div className="layout-container">
