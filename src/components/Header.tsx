@@ -1,11 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className="header">
       <div className="container header-container">
         <Link href="/" className="logo">
-          <span className="logo-latin">Sunwai</span>
+          <Image src="/sunwai-icon.svg" alt="Sunwai" width={36} height={36} style={{ borderRadius: '8px' }} />
+          <span className="logo-latin">
+            sunwa<span style={{ color: 'var(--stamp)' }}>i</span>
+          </span>
           <span className="logo-deva">सुनवाई</span>
         </Link>
         <nav className="main-nav">
