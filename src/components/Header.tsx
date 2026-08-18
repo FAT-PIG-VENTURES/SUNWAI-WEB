@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <Link href="/" className="logo">
-          <Image src="/sunwai-icon.svg" alt="Sunwai" width={36} height={36} style={{ borderRadius: '8px' }} />
+          <Image src="/sunwai-icon.png" alt="Sunwai" width={36} height={36} style={{ borderRadius: '8px' }} />
           <span className="logo-latin">
             sunwa<span style={{ color: 'var(--stamp)' }}>i</span>
           </span>
