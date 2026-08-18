@@ -242,9 +242,9 @@ section > .container {
 
 .logo {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   text-decoration: none;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo-latin {
